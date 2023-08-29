@@ -29,12 +29,12 @@ const Form = ({login}) => {
         <form onSubmit={handleSubmit}>
             <label htmlFor="email">Email: </label>
             <input type="text" name='email' value={userData.email} 
-            onChange={handleChange} autocomplete="off"/>
+            onChange={handleChange} autoComplete="off"/>
             {errors.email && <p>{errors.email}</p>}
             <hr />
             <label htmlFor="password">Password: </label>
             <input type="text" name="password" value={userData.password}
-            onChange={handleChange} autocomplete="off"/>
+            onChange={handleChange} autoComplete="off"/>
             {errors.password && <p>{errors.password}</p>}
 
             <button>Submit</button>
