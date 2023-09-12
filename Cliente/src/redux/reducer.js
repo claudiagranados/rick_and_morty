@@ -11,14 +11,14 @@ const reducer = (state = initialState, {type, payload}) => {
         case ADD_FAV:
             return {
                 ...state,
-                myFavorites: [...state.allCharactersFav, payload],
-                allCharactersFav: [...state.allCharactersFav, payload],
+                myFavorites: payload,
+                allCharactersFav: payload
             }
         
         case REMOVE_FAV:
             return {
                 ...state,
-                myFavorites: state.myFavorites.filter(fav => fav.id !== Number(payload))
+                myFavorites: payload
             }
         
         case FILTER:
