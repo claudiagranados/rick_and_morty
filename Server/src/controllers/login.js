@@ -7,7 +7,7 @@ const login = (req, res) => {
 
     userFound
     ? res.status(200).json({ access: true })
-    : res.status(404).json({ accsess: false })
+    : res.status(404).json({ access: false })
 }
 
 
